@@ -27,14 +27,18 @@ describe("the function", function () {
   });
 });
 
-var assert = require('assert');
-describe("compare tictactoe board size", function () {
-  it("works", function () {
+describe("the function", function () {
+  it("should not work", function () {
     var ticTacToeUtils = new tictactoeUtils.TicTacToeUtils();
-    var board = ticTacToeUtils.buildBoard(2);
-        var expectedBoardSize = 2;
-        let currentBoardSize = board.board.length;
-    assert.equal(expectedBoardSize, currentBoardSize);
+    var board = ticTacToeUtils.buildBoard(5);
+    console.log("G", board);
+    var expectedBoard = {
+        board: [  
+        ],
+        empty: [
+        ]
+        };
+    assert.notEqual(board, expectedBoard);
   });
 });
 
