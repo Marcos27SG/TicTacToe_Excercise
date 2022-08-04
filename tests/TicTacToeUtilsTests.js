@@ -34,5 +34,14 @@ describe("the function", function () {
     var expectedBoard = {};
     assert.notEqual(board, expectedBoard);
   });
+
+  it("test commit", function () {
+    var ticTacToeUtils = new tictactoeUtils.TicTacToeUtils();
+    var board = ticTacToeUtils.buildBoard(2);
+    console.log("G", board);
+    var expectedBoard = {};
+    assert.notEqual(board, expectedBoard);
+  });
+
 });
 
