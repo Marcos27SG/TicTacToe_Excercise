@@ -41,12 +41,5 @@ describe("the function", function () {
     var expectedBoard = {};
     assert.notEqual(board, expectedBoard);
   });
-  it("test commit no 2", function () {
-    var ticTacToeUtils = new tictactoeUtils.TicTacToeUtils();
-    var board = ticTacToeUtils.buildBoard(2);
-    var expectedBoard = {};
-    assert.notEqual(board, expectedBoard);
-  });
-  
 });
 
